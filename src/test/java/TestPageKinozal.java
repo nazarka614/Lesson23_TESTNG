@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pageObject.KinozalPageObject;
 
 public class TestPageKinozal extends BaseClass {
-    static KinozalPageObject kinozalPageObject = PageFactory.initElements(driver, KinozalPageObject.class);
+    public KinozalPageObject kinozalPageObject = PageFactory.initElements(driver, KinozalPageObject.class);
 
     @BeforeClass
     public void startTest() {
