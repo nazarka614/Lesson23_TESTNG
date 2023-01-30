@@ -14,12 +14,11 @@ public class MyLisener extends BaseClass implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
-
+        Screen.takeScreen(driver,iTestResult.getTestName()+"SCREEN");
     }
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        Screen.takeScreen(driver,iTestResult.getTestName()+"SCREEN");
     }
 
     @Override
