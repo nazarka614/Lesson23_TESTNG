@@ -17,7 +17,6 @@ public class TestPageKinozal extends BaseClass {
     }
 
     @Test
-    @
     public void enterdata() {
 
         kinozalPageObject.EnterLoginAndPassword(new User());
